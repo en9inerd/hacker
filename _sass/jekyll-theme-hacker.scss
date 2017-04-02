@@ -25,7 +25,7 @@ body {
   margin: 0 auto;
 }
 
-section {
+main {
   display: block;
   margin: 0 0 20px 0;
 }
@@ -77,6 +77,12 @@ header h2 {
   color: #666;
 }
 
+#navbar .btn {
+  display: inline-block;
+  text-align: center;
+  margin: 0;
+}
+
 #downloads .btn {
   display: inline-block;
   text-align: center;
@@ -90,7 +96,7 @@ header h2 {
   width: 100%;
   -webkit-font-smoothing: antialiased;
 }
-section img {
+main img {
   max-width: 100%
 }
 
@@ -235,6 +241,138 @@ hr {
 a {
   color: #63c0f5;
   text-shadow: 0 0 5px rgba(104, 182, 255, 0.5);
+  outline: none;
+}
+
+#main_content {
+  a:link {
+    text-decoration: none;
+  }
+
+  a:visited {
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  a:active {
+    text-decoration: underline;
+  }
+}
+
+header h1 {
+  a {
+    text-decoration: none;
+    color: inherit;
+    text-shadow: inherit;
+  }
+  a:hover {
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3),
+               0 0 5px rgba(181, 232, 83, 0.3),
+               0 0 10px rgba(181, 232, 83, 0.3);
+  }
+}
+
+/* Posts
+*/
+
+.pre-post {
+  font-weight: normal;
+  font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
+  color: #b5e853;
+  letter-spacing: -0.03em;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1),
+               0 0 5px rgba(181, 232, 83, 0.1),
+               0 0 10px rgba(181, 232, 83, 0.1);
+}
+
+.comments {
+  margin-top: 10px;
+}
+
+.posts > .post {
+  padding-bottom: 2em;
+  margin-bottom: 1em;
+  border-bottom: 1px dashed #b5e853;
+}
+
+.posts > .post:last-child {
+  padding-bottom: 1em;
+  border-bottom: none;
+}
+
+.post {
+  .post-footer {
+    text-align: right;
+  }
+
+  .read-more {
+    text-transform: uppercase;
+    margin-left: 15px;
+  }
+}
+
+time {
+  font-style: italic;
+  color: #666;
+}
+
+.pagination {
+  padding: 20px;
+  text-align: center;
+  border: 1px dashed #b5e853;
+  color: #b5e853;
+  a {
+    text-decoration: none;
+    color: inherit;
+    text-shadow: inherit;
+  }
+}
+
+/* Footer
+*/
+
+footer {
+  padding: 20px 0;
+  text-align: center;
+}
+
+.copyright {
+  color: #666;
+  display: block;
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+/* Feedback form
+*/
+
+input[type=text], input[type=email], textarea {
+  width: 100%;
+  box-sizing: border-box;
+  background: rgba(0, 0, 0, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 10px;
+  font-size: 16px;
+  color: #b5e853;
+  border-radius: 2px;
+  resize: none;
+  margin-bottom: 6px;
+}
+
+#contact {
+  overflow: hidden;
+}
+
+#contact textarea {
+  height: 150px;
+}
+
+#contact input.btn {
+  float: right;
+  clear: both;
 }
 
 /* Clearfix */

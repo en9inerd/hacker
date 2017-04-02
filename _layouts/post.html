@@ -6,8 +6,8 @@ layout: default
   <h1>{{ page.title }}</h1>
   <span class="pre-post">Category ~/ [
     <a href="{{ site.baseurl }}/categories#{{ page.category }}" class="post-tag">{{ page.category }}</a>
-    ]
-    <br>
+    ]  
+    <br />
   </span>
   {% if page.tags %}
   <span class="pre-post">Tags |--> [
@@ -21,9 +21,9 @@ layout: default
     {{ content }}
   </div>
 
-  <div class="date">
+  <time datetime="{{ page.date | date_to_xmlschema }}">
     Written on {{ page.date | date: "%B %e, %Y at %R %Z" }}
-  </div>
+  </time>
 
-  {% include disqus.html %}
+  {% if page.comments %}{% include disqus.html %}{% endif %}
 </article>

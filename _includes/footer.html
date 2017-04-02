@@ -1,0 +1,7 @@
+<footer class="footer" role="contentinfo">
+  {% include svg-icons.html %}
+  {% assign earliestPost = site.posts | last %}
+  <span class="copyright">&copy; {{ earliestPost.date | date: "%Y" }}
+  {% unless earliestPost.date | date: "%Y" == site.time | date: "%Y" %} – {{ site.time | date: "%Y" }}
+  {% endunless %} {{ site.author }}</span>
+</footer>
