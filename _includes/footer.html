@@ -1,7 +1,14 @@
 <footer class="footer" role="contentinfo">
   {% include svg-icons.html %}
+  {% if page.title == "About" %}
+  <p class="pgp-key">
+    <a href="https://raw.githubusercontent.com/eng1nerd/eng1nerd.github.io/master/assets/files/key.asc">PGP:
+    <code>3A6B 30B1 C535 625D 51CA A2F0 232A 56BC FF4E AEF2</code></a>
+  </p>{% endif %}
   {% assign earliestPost = site.posts | last %}
-  <span class="copyright">&copy; {{ earliestPost.date | date: "%Y" }}
-  {% unless earliestPost.date | date: "%Y" == site.time | date: "%Y" %} – {{ site.time | date: "%Y" }}
-  {% endunless %} {{ site.author }}</span>
+  <span class="copyright">
+    &copy; {{ earliestPost.date | date: "%Y" }}
+    {% unless earliestPost.date | date: "%Y" == site.time | date: "%Y" %} – {{ site.time | date: "%Y" }}
+    {% endunless %} {{ site.author }}
+  </span>
 </footer>
