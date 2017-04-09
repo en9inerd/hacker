@@ -331,6 +331,19 @@ time {
   }
 }
 
+@media screen and (max-width: 568px) {
+  .hide-on-mobiles { display: none !important; }
+}
+
+.improve {
+  float: right;
+  padding-top: 20px;
+  font-size: 14px;
+  a {
+    color: #999;
+  }
+}
+
 /* Footer
 */
 
