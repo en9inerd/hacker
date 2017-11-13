@@ -1,9 +1,9 @@
 <footer class="footer" role="contentinfo">
   {% include svg-icons.html %}
-  {% if page.title == "About" %}
+  {% if page.title == "About" and site.pgp-key.show %}
   <p class="pgp-key">
-    <a href="https://keybase.io/en9inerd/pgp_keys.asc">PGP:
-    <code>3A6B 30B1 C535 625D 51CA A2F0 232A 56BC FF4E AEF2</code></a>
+    <a href="{{ site.pgp-key.url }}">PGP:
+    <code>{{ site.pgp-key.fingerprint }}</code></a>
   </p>{% endif %}
   {% assign earliestPost = site.posts | last %}
   <span class="copyright">

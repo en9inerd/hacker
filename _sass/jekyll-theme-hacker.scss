@@ -367,21 +367,10 @@ footer {
     color: #c7254e;
     background-color: black;
     border-radius: 4px;
+    font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
   }
-  a:link {
+  a {
     text-decoration: none;
-  }
-
-  a:visited {
-    text-decoration: none;
-  }
-
-  a:hover {
-    text-decoration: underline;
-  }
-
-  a:active {
-    text-decoration: underline;
   }
 }
 
