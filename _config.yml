@@ -60,7 +60,7 @@ show_downloads: false
 #   style: :expanded # You might prefer to minify using :compressed
 
 # Use the following plug-ins
-gems:
+plugins:
   - jemoji
   - jekyll-mentions
   - jekyll-redirect-from
@@ -71,8 +71,6 @@ gems:
   - jekyll-github-metadata
   - jekyll-gist
   - jekyll-avatar
-
-theme: jekyll-theme-hacker
 
 # Exclude these files from your production _site
 exclude:
