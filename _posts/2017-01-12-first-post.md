@@ -6,7 +6,7 @@ category: blog
 tags: [example]
 ---
 
-Text can be **bold**, _italic_, or ~~strikethrough~~.
+Text can be **bold**, _italic_, ~~strikethrough~~ or `keyword`.
 
 [Link to another page](another-page).
 
