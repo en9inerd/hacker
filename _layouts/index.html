@@ -29,13 +29,13 @@ layout: default
 {% if paginator.total_pages > 1 %}
 <div class="pagination">
 {% if paginator.previous_page %}
-  <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&lt;-- Previous</a>
+  <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="previous-page">&lt;-- Previous</a>
 {% else %}
-  <span>&lt;-- Previous</span>
+  <span class="previous-page">&lt;-- Previous</span>
 {% endif %}{% if paginator.next_page %}
-  <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next --&gt;</a>
+  <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="next-page">Next --&gt;</a>
 {% else %}
-  <span>Next --&gt;</span>
+  <span class="next-page">Next --&gt;</span>
 {% endif %}
 </div>
 {% endif %}

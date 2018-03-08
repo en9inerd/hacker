@@ -28,7 +28,6 @@ body {
 
 main {
   display: block;
-  margin-bottom: 4em;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -294,7 +293,7 @@ header h1 {
 }
 
 .comments {
-  margin-top: 3em;
+  margin-top: 4em;
 }
 
 .posts > .post {
@@ -337,14 +336,15 @@ time.post-time {
 }
 
 .pagination {
-  padding: 20px;
+  padding-top: 20px;
   text-align: center;
-  border: 1px dashed #b5e853;
+  border-top: 1px dashed #b5e853;
   color: #b5e853;
-  a {
-    text-decoration: none;
-    color: inherit;
-    text-shadow: inherit;
+  .previous-page {
+    margin-right: 2em;
+  }
+  .next-page {
+    margin-left: 2em;
   }
 }
 
@@ -365,7 +365,7 @@ time.post-time {
 */
 
 footer {
-  padding-bottom: 1em;
+  margin: 4em 0 2em;
   text-align: center;
 }
 
