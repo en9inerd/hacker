@@ -28,7 +28,7 @@ body {
 
 main {
   display: block;
-  margin: 0 0 20px 0;
+  margin-bottom: 4em;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -279,7 +279,11 @@ header h1 {
 /* Posts
 */
 
-.pre-post {
+.post-info {
+  margin-bottom: 2em;
+}
+
+.post-info span {
   font-weight: normal;
   font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
   color: #b5e853;
@@ -290,7 +294,7 @@ header h1 {
 }
 
 .comments {
-  margin-top: 10px;
+  margin-top: 3em;
 }
 
 .posts > .post {
@@ -315,9 +319,21 @@ header h1 {
   }
 }
 
+.entry {
+  margin: 0;
+}
+
 time {
   font-style: italic;
   color: #666;
+}
+
+.post time {
+  display: block;
+}
+
+time.post-time {
+  margin-top: 1em;
 }
 
 .pagination {
@@ -349,7 +365,7 @@ time {
 */
 
 footer {
-  padding: 20px 0;
+  padding-bottom: 1em;
   text-align: center;
 }
 
@@ -380,6 +396,7 @@ footer {
 
 input[type=text], input[type=email], textarea {
   width: 100%;
+  max-width: 820px;
   box-sizing: border-box;
   background: rgba(0, 0, 0, 0.9);
   border: 1px solid rgba(255, 255, 255, 0.15);
@@ -393,6 +410,8 @@ input[type=text], input[type=email], textarea {
 
 #contact {
   overflow: hidden;
+  max-width: 820px;
+  margin: 0 auto;
 }
 
 #contact textarea {
