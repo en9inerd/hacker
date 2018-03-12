@@ -42,6 +42,8 @@ google_analytics:
 
 paginate: 5
 
+permalink: pretty
+
 excerpt_separator: <!--more-->
 
 # Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
