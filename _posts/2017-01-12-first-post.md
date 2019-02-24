@@ -8,7 +8,7 @@ tags: [example]
 
 Text can be **bold**, _italic_, ~~strikethrough~~ or `keyword`.
 
-[Link to another page](./another-page.html).
+[Link to another page]({{ site.baseurl }}{% link another-page.md %}).
 
 There should be whitespace between paragraphs.
 <!--more-->
@@ -99,11 +99,11 @@ end
 
 ### Small image
 
-![](https://assets-cdn.github.com/images/icons/emoji/octocat.png)
+![Octocat](https://assets-cdn.github.com/images/icons/emoji/octocat.png)
 
 ### Large image
 
-![](https://guides.github.com/activities/hello-world/branching.png)
+![Branching](https://guides.github.com/activities/hello-world/branching.png)
 
 
 ### Definition lists can be used with HTML syntax.
