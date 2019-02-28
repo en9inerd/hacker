@@ -43,7 +43,7 @@
   icon: twitter
 
 - resource: stackoverflow
-  url: http://stackoverflow.com/
+  url: https://stackoverflow.com/
   icon: stackoverflow
 
 - resource: youtube
