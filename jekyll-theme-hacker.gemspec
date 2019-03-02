@@ -18,6 +18,7 @@ Gem::Specification.new do |s|
   s.add_runtime_dependency 'jekyll-gist'
   s.add_runtime_dependency 'jekyll-github-metadata'
   s.add_runtime_dependency 'jekyll-mentions'
+  s.add_runtime_dependency 'jekyll-paginate'
   s.add_runtime_dependency 'jekyll-redirect-from'
   s.add_runtime_dependency 'jekyll-seo-tag', '~> 2.0'
   s.add_runtime_dependency 'jekyll-sitemap'
