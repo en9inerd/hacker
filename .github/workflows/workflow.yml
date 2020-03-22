@@ -1,0 +1,13 @@
+name: CI
+on: [push]
+jobs:
+  check:
+    steps:
+    - uses: actions/checkout@v2
+    - uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: 2.6
+    - name: Install dependencies
+      run: script/bootstrap
+    - name: Validation
+      run: script/cibuild
