@@ -1,6 +1,6 @@
 # The Hacker theme
 
-[![Build Status](https://travis-ci.org/eng1nerd/hacker.svg?branch=master)](https://travis-ci.org/eng1nerd/hacker) [![Gem Version](https://badge.fury.io/rb/jekyll-theme-hacker.svg)](https://badge.fury.io/rb/jekyll-theme-hacker)
+![CI](https://github.com/eng1nerd/hacker/workflows/CI/badge.svg) [![Gem Version](https://badge.fury.io/rb/jekyll-theme-hacker.svg)](https://badge.fury.io/rb/jekyll-theme-hacker)
 
 *Hacker is a Jekyll theme for GitHub Pages. You can [preview the theme to see what it looks like](http://pages-themes.github.io/hacker), or even [use it today](#usage).*
 
