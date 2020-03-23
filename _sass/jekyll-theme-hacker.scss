@@ -237,7 +237,7 @@ hr {
   width: 16px;
   height: 16px;
   margin: 1px 8px 0 0;
-  float: none;
+  float: left;
 }
 
 .btn-github .icon {
@@ -259,6 +259,9 @@ a {
 #main_content, .footer {
   a:hover, a:active {
     text-shadow: 0 0 5px rgba(104, 182, 255, 1.0);
+  }
+  a.btn:hover, a.btn:active {
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.75);
   }
 }
 
@@ -385,9 +388,6 @@ footer {
     background-color: black;
     border-radius: 4px;
     font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
-  }
-  a {
-    text-decoration: none;
   }
 }
 
