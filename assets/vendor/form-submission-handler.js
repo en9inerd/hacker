@@ -57,7 +57,7 @@
     var data = formData.data;
 
     // If a honeypot field is filled, assume it was done so by a spam bot.
-    if (formData.honeypot) {
+    if (formData.honeypot || formData.honeypot === '') {
       return false;
     }
 

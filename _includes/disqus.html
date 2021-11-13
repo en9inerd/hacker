@@ -8,7 +8,7 @@
     var disqus_config = function () {
         this.page.url = {{ page.url | absolute_url | jsonify }};
         this.page.identifier = {{ page.id | jsonify }};
-        this.page.title = {{ page.title | jsonify }}
+        this.page.title = {{ page.title | jsonify }};
     };
 
     (function() {
