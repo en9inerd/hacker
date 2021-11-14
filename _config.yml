@@ -9,9 +9,19 @@ title: Hacker theme
 description: Hacker is a theme for GitHub Pages.
 
 author:
+  name: John Doe
+
+logo:
+
+# JSON-LD
+bio:
+  gender: male
+  employer_name: Unknown
+  employer_url: https://unknown.com
+  job_title: mock
 
 # Includes an icon in the footer for each username you enter
-footer-links:
+social-links:
   dribbble:
   email:
   facebook:
@@ -27,6 +37,10 @@ footer-links:
   youtube: # channel/<your_long_string> or user/<user-name>
   googleplus: # anything in your profile username that comes after plus.google.com/
 
+social:
+  name: John Doe
+  links: 
+    - https://github.com/John-Doe
 
 # Enter your Disqus shortname (not your username) to enable commenting on posts
 # You can find your shortname on the Settings page of your Disqus account
@@ -47,7 +61,6 @@ permalink: pretty
 excerpt_separator: <!--more-->
 
 # Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
-# Used for Sitemap.xml and your RSS feed
 url:
 
 # If you're hosting your site at a Project repository on GitHub pages
