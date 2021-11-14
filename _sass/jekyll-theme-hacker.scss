@@ -390,6 +390,9 @@ footer {
     border-radius: 4px;
     font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
   }
+  a:hover code, a:active code {
+    text-shadow: 0 0 5px #99092d;
+  }
 }
 
 /* Feedback form
