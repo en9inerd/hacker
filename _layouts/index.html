@@ -8,7 +8,7 @@ layout: default
     <h1><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h1>
     <div class="post-info">
       <time datetime="{{ post.date | date_to_xmlschema }}">
-        Posted {{ post.date | date: "%B %e, %Y at %R %Z" }}
+        Posted on {{ post.date | date: "%B %e, %Y at %R %Z" }}
       </time>
     </div>
 
