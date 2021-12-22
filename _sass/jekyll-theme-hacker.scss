@@ -246,6 +246,10 @@ hr {
   background: url("../images/blacktocat.png") 0 0 no-repeat;
 }
 
+.resume-btn {
+  margin-top: -0.2em;
+}
+
 /* Links
    a, a:hover, a:visited
 */
@@ -326,6 +330,23 @@ header h1 {
   margin: 0;
 }
 
+.improve {
+  float: right;
+  padding-top: 0.5em;
+  font-size: 14px;
+  a {
+    color: $light-grey;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .hide-on-mobiles { display: none !important; }
+  .resume-btn {}
+}
+
+/* Date and time
+*/
+
 time {
   font-style: italic;
   color: $dove-grey;
@@ -339,6 +360,9 @@ time.post-time {
   margin-top: 1em;
 }
 
+/* Pagination
+*/
+
 .pagination {
   padding-top: 20px;
   text-align: center;
@@ -349,19 +373,6 @@ time.post-time {
   }
   .next-page {
     margin-left: 2em;
-  }
-}
-
-@media screen and (max-width: 568px) {
-  .hide-on-mobiles { display: none !important; }
-}
-
-.improve {
-  float: right;
-  padding-top: 20px;
-  font-size: 14px;
-  a {
-    color: $light-grey;
   }
 }
 
