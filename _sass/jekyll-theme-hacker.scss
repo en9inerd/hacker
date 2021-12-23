@@ -247,7 +247,8 @@ hr {
 }
 
 .resume-btn {
-  margin-top: -0.2em;
+  margin-top: -1.2rem;
+  float: right;
 }
 
 /* Links
@@ -341,7 +342,9 @@ header h1 {
 
 @media screen and (max-width: 568px) {
   .hide-on-mobiles { display: none !important; }
-  .resume-btn {}
+  .resume-btn {
+    float: none;
+  }
 }
 
 /* Date and time
