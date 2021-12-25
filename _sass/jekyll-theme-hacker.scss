@@ -209,10 +209,6 @@ hr {
   color: $conifer;
 }
 
-.remove-bottom-margin {
-  margin-bottom: 0;
-}
-
 /* Buttons
 */
 
@@ -337,7 +333,7 @@ header h1 {
 
 .improve {
   float: right;
-  padding-top: 0.5em;
+  padding-top: 0.45rem;
   font-size: 14px;
   a {
     color: $light-grey;
@@ -347,7 +343,7 @@ header h1 {
 @media screen and (max-width: 568px) {
   .hide-on-mobiles { display: none !important; }
   .resume-btn {
-    float: none;
+    margin-top: -5.2rem;
   }
 }
 
@@ -456,6 +452,12 @@ input[type=text]:focus, input[type=email]:focus, textarea:focus {
 
 #itsatrap {
   display: none; /*makes the field not visible to humans*/
+}
+
+/* Resume */
+
+.remove-bottom-margin {
+  margin-bottom: 0;
 }
 
 /* Clearfix */
