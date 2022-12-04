@@ -46,6 +46,9 @@ social:
 # You can find your shortname on the Settings page of your Disqus account
 disqus:
 
+# Contact form action url
+contact_form_action: https://script.google.com/macros/s/aaaaaaa
+
 pgp-key:
   show: false
   url:
