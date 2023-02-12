@@ -4,21 +4,24 @@ layout: default
 
 <article class="post">
   <div class="improve hide-on-mobiles cf">
-    <a href="{{ site.github.repository_url }}/edit/master/{{ page.path }}" title="Help improve post {{ page.path }}">Improve this post</a>
+    <a href="{{ site.github.repository_url }}/edit/master/{{ page.path }}"
+      title="Help improve post {{ page.path }}">Improve this post</a>
   </div>
   <h1>{{ page.title }}</h1>
   <div class="post-info">
-    {% if page.category %}
+    {% assign categories_page = site.pages | find: "path", "categories.md" %}{% if page.category and categories_page %}
     <span>Category &lt;
-      <a href="{{ site.baseurl }}{% link categories.md %}#{{ page.category }}" class="post-tag">{{ page.category }}</a> &gt;
+      <a href="{{ site.baseurl }}{% link categories.md %}#{{ page.category }}" class="post-tag">{{ page.category }}</a>
+      &gt;
       <br />
     </span>{% endif %}
-    {% if page.tags %}
+    {% assign tags_page = site.pages | find: "path", "tags.md" %}{% if page.tags and tags_page %}
     <span>Tags = [
-    {% for tag in page.tags %}
-      <a href="{{ site.baseurl }}{% link tags.md %}#{{ tag | slugify: 'pretty' }}" class="post-tag">{{ tag }}</a>{% unless forloop.last %},{% endunless %}
-    {% endfor %}
-    ]
+      {% for tag in page.tags %}
+      <a href="{{ site.baseurl }}{% link tags.md %}#{{ tag | slugify: 'pretty' }}" class="post-tag">{{ tag }}</a>{%
+      unless forloop.last %},{% endunless %}
+      {% endfor %}
+      ]
     </span>{% endif %}
     <time class="post-time" datetime="{{ page.date | date_to_xmlschema }}">
       Posted on {{ page.date | date: "%B %e, %Y at %R %Z" }}
