@@ -35,7 +35,6 @@ social-links:
   twitter:
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
   youtube: # channel/<your_long_string> or user/<user-name>
-  googleplus: # anything in your profile username that comes after plus.google.com/
 
 social:
   name: John Doe

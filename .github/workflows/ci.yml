@@ -4,6 +4,7 @@ on:
     types: [opened, synchronize]
 jobs:
   build:
+    environment: github-pages
     runs-on: ubuntu-latest
     name: script/cibuild
     steps:

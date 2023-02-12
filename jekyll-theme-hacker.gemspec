@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |s|
   s.name          = "jekyll-theme-hacker"
-  s.version       = "0.1.2"
+  s.version       = "0.2.0"
   s.license       = "CC0-1.0"
   s.authors       = ["Jason Costello", "GitHub, Inc."]
   s.email         = ["opensource+jekyll-theme-hacker@github.com"]
@@ -24,7 +24,7 @@ Gem::Specification.new do |s|
   s.add_runtime_dependency "jekyll-mentions"
   s.add_runtime_dependency "jekyll-paginate"
   s.add_runtime_dependency "jekyll-redirect-from"
-  s.add_runtime_dependency "jekyll-seo-tag", "~> 2.0"
+  s.add_runtime_dependency "jekyll-seo-tag"
   s.add_runtime_dependency "jekyll-sitemap"
   s.add_runtime_dependency "jemoji"
   s.add_development_dependency "html-proofer", "~> 3.0"
