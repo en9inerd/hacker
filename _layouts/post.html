@@ -7,7 +7,7 @@ layout: default
     <a href="{{ site.github.repository_url }}/edit/master/{{ page.path }}"
       title="Help improve post {{ page.path }}">Improve this post</a>
   </div>
-  <h1>{{ page.title }}</h1>
+  <h2>{{ page.title }}</h2>
   <div class="post-info">
     {% assign categories_page = site.pages | find: "path", "categories.md" %}{% if page.category and categories_page %}
     <span>Category &lt;
@@ -23,7 +23,7 @@ layout: default
       {% endfor %}
       ]
     </span>{% endif %}
-    <time class="post-time" datetime="{{ page.date | date_to_xmlschema }}">
+    <time class="post-time smaller" datetime="{{ page.date | date_to_xmlschema }}">
       Posted on {{ page.date | date: "%B %e, %Y at %R %Z" }}
     </time>
   </div>

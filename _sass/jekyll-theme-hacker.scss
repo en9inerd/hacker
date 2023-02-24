@@ -82,7 +82,6 @@ header h1 {
   }
 }
 
-
 header h1:before {
   content: "./ ";
   font-size: 24px;
@@ -94,16 +93,18 @@ header h2 {
   color: $dove-grey;
 }
 
-#navbar .btn {
+nav {
+  margin: 0 0 20px 0;
+}
+
+nav .btn {
   display: inline-block;
   text-align: center;
   margin: 0;
 }
 
-#downloads .btn {
-  display: inline-block;
-  text-align: center;
-  margin: 0;
+.smaller {
+  font-size: 0.875em;
 }
 
 /* Main Content
