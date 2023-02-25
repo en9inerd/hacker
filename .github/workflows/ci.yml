@@ -17,3 +17,5 @@ jobs:
         run: script/bootstrap
       - name: test
         run: script/cibuild
+        env:
+          JEKYLL_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
