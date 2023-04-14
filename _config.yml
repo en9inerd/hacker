@@ -46,7 +46,10 @@ social:
 disqus:
 
 # Contact form action url
-contact_form_action: https://script.google.com/macros/s/aaaaaaa
+contact_form_action: https://script.google.com/macros/s/xxxxxx
+
+# Visitor notifier based on IFTTT + Webhooks. Sample here - /assets/js/monitor.js
+monitor: false
 
 pgp-key:
   show: false
