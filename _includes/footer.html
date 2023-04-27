@@ -1,9 +1,10 @@
-<footer class="footer" role="contentinfo">
+<footer>
   {% include svg-icons.html %}
   {% if page.title == "About" and site.pgp-key.show %}
   <p class="pgp-key">
-    <a href="{{ site.pgp-key.url }}" style="text-shadow: none;">PGP:
-    <code>{{ site.pgp-key.fingerprint }}</code></a>
+    <a href="{{ site.pgp-key.url }}">PGP:
+      <code>{{ site.pgp-key.fingerprint }}</code>
+    </a>
   </p>{% endif %}
   {% assign earliestPost = site.posts | last %}{% assign earliestDate = earliestPost.date | date: "%Y" %}{% assign currentDate = site.time | date: "%Y" %}
   <span class="copyright">

@@ -3,11 +3,13 @@ layout: default
 ---
 
 <article class="post">
-  <div class="improve hide-on-mobiles cf">
-    <a href="{{ site.github.repository_url }}/edit/master/{{ page.path }}"
-      title="Help improve post {{ page.path }}">Improve this post</a>
+  <div class="header-container">
+    <h2>{{ page.title }}</h2>
+    <div class="improve hide-on-mobiles">
+      <a href="{{ site.github.repository_url }}/edit/master/{{ page.path }}"
+        title="Help improve post {{ page.path }}">Improve this post</a>
+    </div>
   </div>
-  <h2>{{ page.title }}</h2>
   <div class="post-info">
     {% assign categories_page = site.pages | find: "path", "categories.md" %}{% if page.category and categories_page %}
     <span>Category &lt;

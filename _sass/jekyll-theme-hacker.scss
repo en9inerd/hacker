@@ -33,10 +33,6 @@ body {
   margin: 0 auto;
 }
 
-main {
-  display: block;
-}
-
 h1,
 h2,
 h3,
@@ -94,13 +90,11 @@ header h2 {
 }
 
 nav {
+  display: flex;
+  justify-content: left;
+  flex-wrap: wrap;
+  gap: 10px;
   margin: 0 0 20px 0;
-}
-
-nav .btn {
-  display: inline-block;
-  text-align: center;
-  margin: 0;
 }
 
 .smaller {
@@ -110,7 +104,7 @@ nav .btn {
 /* Main Content
 */
 
-#main_content {
+main {
   width: 100%;
   -webkit-font-smoothing: antialiased;
 }
@@ -134,29 +128,29 @@ h6 {
     0 0 10px rgba(181, 232, 83, 0.1);
 }
 
-#main_content h1 {
+main h1 {
   font-size: 30px;
 }
 
-#main_content h2 {
+main h2 {
   font-size: 24px;
 }
 
-#main_content h3 {
+main h3 {
   font-size: 18px;
 }
 
-#main_content h4 {
+main h4 {
   font-size: 14px;
 }
 
-#main_content h5 {
+main h5 {
   font-size: 12px;
   text-transform: uppercase;
   margin: 0 0 5px 0;
 }
 
-#main_content h6 {
+main h6 {
   font-size: 12px;
   text-transform: uppercase;
   color: $light-grey;
@@ -249,18 +243,13 @@ hr {
   display: inline-block;
   width: 16px;
   height: 16px;
-  margin: 1px 8px 0 0;
-  float: left;
+  vertical-align: sub;
+  margin-right: 8px;
 }
 
 .btn-github .icon {
   opacity: 0.6;
   background: url("../images/blacktocat.png") 0 0 no-repeat;
-}
-
-.resume-btn {
-  margin-top: -1.2rem;
-  float: right;
 }
 
 /* Links
@@ -274,8 +263,8 @@ a {
   text-decoration: none;
 }
 
-#main_content,
-.footer {
+main,
+footer {
 
   a:hover,
   a:active {
@@ -302,7 +291,7 @@ header h1 {
   }
 }
 
-/* Posts
+/* Posts and Pages
 */
 
 .post-info {
@@ -345,14 +334,15 @@ header h1 {
   }
 }
 
-.entry {
-  margin: 0;
+.header-container {
+  display: flex;
+  justify-content: space-between;
 }
 
 .improve {
-  float: right;
-  padding-top: 0.45rem;
   font-size: 14px;
+  white-space: nowrap;
+  margin-left: 1.5rem;
 
   a {
     color: $light-grey;
@@ -362,10 +352,6 @@ header h1 {
 @media screen and (max-width: 568px) {
   .hide-on-mobiles {
     display: none !important;
-  }
-
-  .resume-btn {
-    margin-top: -5.2rem;
   }
 }
 
@@ -429,6 +415,10 @@ footer {
     font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
   }
 
+  a {
+    text-shadow: none;
+  }
+
   a:hover code,
   a:active code {
     text-shadow: 0 0 5px #99092d;
@@ -477,13 +467,16 @@ textarea:focus {
   height: 150px;
 }
 
-.contact-form input.btn {
-  float: right;
+.contact-form .submit-btn-align {
+  text-align: right;
 }
 
 #itsatrap {
   display: none;
-  /*makes the field not visible to humans*/
+}
+
+.thankyou-message {
+  display: none;
 }
 
 /* Resume */
@@ -492,21 +485,20 @@ textarea:focus {
   margin-bottom: 0;
 }
 
+.resume-btn {
+  margin-top: -0.3rem;
+  margin-bottom: -1.2rem;
+  text-align: right;
+}
+
+@media screen and (max-width: 568px) {
+  .resume-btn {
+    margin-top: -3.8rem;
+    margin-bottom: 2.3rem;
+  }
+}
+
 /* Clearfix */
-
-.cf:before,
-.cf:after {
-  content: "";
-  display: table;
-}
-
-.cf:after {
-  clear: both;
-}
-
-.cf {
-  transform: scale(1);
-}
 
 #a-title {
   text-decoration: none;

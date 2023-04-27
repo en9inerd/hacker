@@ -6,3 +6,5 @@ seo:
   type: person
 ---
 
+## Contact Me
+{% include contact-form.html %}

@@ -1,32 +1,35 @@
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: "en-US" }}" xml:lang="{{ site.lang | default: "en-US" }}">
-  <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
-    {% include head-custom.html %}
-    {% feed_meta %}
-    {% seo %}
-  </head>
+  
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+  {% include head-custom.html %}
+  {% feed_meta %}
+  {% seo %}
+</head>
 
-  <body>
-    <header role="banner">
-      <div class="container">
-        <a id="a-title" href="{{ '/' | relative_url }}">
-          <h1>{{ site.title | default: site.github.repository_name }}</h1>
-        </a>
-        <h2>{{ site.description | default: site.github.project_tagline }}</h2>
-        {% include navigation.html %}
-      </div>
-    </header>
-
+<body>
+  <header>
     <div class="container">
-      <main id="main_content" role="main">
-        {{ content }}
-      </main>
+      <a id="a-title" href="{{ '/' | relative_url }}">
+        <h1>{{ site.title | default: site.github.repository_name }}</h1>
+      </a>
+      <h2>{{ site.description | default: site.github.project_tagline }}</h2>
+      {% include navigation.html %}
     </div>
-    {% include footer.html %}
+  </header>
 
-    {% if site.disqus %}<script id="dsq-count-scr" src="//{{ site.disqus }}.disqus.com/count.js" async></script>{% endif %}
-  </body>
+  <div class="container">
+    <main>
+      {{ content }}
+    </main>
+  </div>
+  {% include footer.html %}
+
+  {% if site.disqus %}
+  <script id="dsq-count-scr" src="//{{ site.disqus }}.disqus.com/count.js" async></script>{% endif %}
+</body>
+
 </html>
