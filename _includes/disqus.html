@@ -4,7 +4,7 @@
 
 {% unless jekyll.environment == "development" %}
 <script type="text/javascript">
-  var disqus_config = () => {
+  var disqus_config = function() {
     this.page.url = {{ page.url | absolute_url | jsonify }};
     this.page.identifier = {{ page.id | jsonify }};
     this.page.title = {{ page.title | jsonify }};
