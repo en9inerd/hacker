@@ -6,9 +6,8 @@
       <code>{{ site.pgp-key.fingerprint }}</code>
     </a>
   </p>{% endif %}
-  {% assign earliestPost = site.posts | last %}{% assign earliestDate = earliestPost.date | date: "%Y" %}{% assign currentDate = site.time | date: "%Y" %}
-  <span class="copyright">
-    &copy; {{ earliestDate }}
-    {% if earliestDate != currentDate %} – {{ currentDate }}{% endif %} {{ site.author.name }}
-  </span>
+  {% assign earliestPost = site.posts | last %}{% assign earliestDate = earliestPost.date | date: "%Y" %}{% assign
+  currentDate = site.time | date: "%Y" %}
+  <span class="copyright">&copy; {{ earliestDate }}{% if earliestDate != currentDate %} – {{ currentDate }}{% endif %}
+    {{ site.author.name }}</span>
 </footer>
