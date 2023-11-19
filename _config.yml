@@ -45,8 +45,8 @@ social:
 # You can find your shortname on the Settings page of your Disqus account
 disqus:
 
-# Contact form action url
-contact_form_action: https://script.google.com/macros/s/xxxxxx
+# Contact form script id that points to google macros (e.g. https://script.google.com/macros/s/<script-identifier>/exec)
+contact_form_script_id: <script-identifier>
 
 # Visitor notifier based on IFTTT + Webhooks. Sample here - /assets/js/monitor.js
 monitor: false
