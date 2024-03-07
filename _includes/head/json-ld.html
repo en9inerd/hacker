@@ -1,3 +1,4 @@
+{%- if page.name == "about.md" or page.url == "/" -%}
 <script type="application/ld+json">
   {
     "@context": "http://schema.org",
@@ -15,4 +16,5 @@
     },
     "sameAs": {{ site.social.links | jsonify }}
   }
-  </script>
+</script>
+{%- endif -%}

@@ -11,19 +11,19 @@ layout: default
     </div>
   </div>
   <div class="post-info">
-    {% assign categories_page = site.pages | find: "path", "categories.md" %}{% if page.category and categories_page %}
+    {%- assign categories_page = site.pages | find: "path", "categories.md" %}{% if page.category and categories_page %}
     <span>Category &lt;
       <a href="{{ site.baseurl }}{% link categories.md %}#{{ page.category }}" class="post-tag">{{ page.category }}</a>
       &gt;
       <br />
     </span>{% endif %}
-    {% assign tags_page = site.pages | find: "path", "tags.md" %}{% if page.tags and tags_page %}
+    {%- assign tags_page = site.pages | find: "path", "tags.md" %}{% if page.tags and tags_page %}
     <span>Tags = [
-      {% for tag in page.tags %}
-      <a href="{{ site.baseurl }}{% link tags.md %}#{{ tag | slugify: 'pretty' }}" class="post-tag">{{ tag }}</a>{%
-      unless forloop.last %},{% endunless %}
-      {% endfor %}
-      ]
+      {%- for tag in page.tags %}
+      <a href="{{ site.baseurl }}{% link tags.md %}#{{ tag | slugify: 'pretty' }}" class="post-tag">{{ tag }}</a>
+      {%-unless forloop.last -%},
+      {%- endunless -%}
+      {%- endfor %} ]
     </span>{% endif %}
     <time class="post-time smaller" datetime="{{ page.date | date_to_xmlschema }}">
       Posted on {{ page.date | date: "%B %e, %Y at %R %Z" }}
@@ -32,5 +32,5 @@ layout: default
   <div class="entry">
     {{ content }}
   </div>
-  {% if page.comments and site.giscus %}{% include giscus.html %}{% endif %}
+  {%- if page.comments and site.giscus -%}{%- include giscus.html -%}{% endif %}
 </article>

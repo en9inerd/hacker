@@ -2,12 +2,7 @@
 <html lang="{{ site.lang | default: "en-US" }}" xml:lang="{{ site.lang | default: "en-US" }}">
   
 <head>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
-  {% include head-custom.html %}
-  {% feed_meta %}
-  {% seo %}
+  {% include head.html -%}
 </head>
 
 <body>
@@ -26,7 +21,9 @@
       {{ content }}
     </main>
   </div>
-  {% include footer.html %}
+  <footer>
+    {%- include footer.html -%}
+  </footer>
 </body>
 
 </html>

@@ -1,11 +1,12 @@
 <nav id="navbar">
-  {% if site.show_downloads %}
+  {%- if site.show_downloads -%}
   <a href="{{ site.github.zip_url }}" class="btn">Download as .zip</a>
   <a href="{{ site.github.tar_url }}" class="btn">Download as .tar.gz</a>
-  <a href="{{ site.github.repository_url }}" {% else %} {% for path in site.data.nav_pages %} {% assign
-    nav_page=site.pages | where:"path",path | first %}{% if nav_page %} <a href="{{ nav_page.url | absolute_url }}"
-    class="btn">{{
-    nav_page.title }}</a> {% endif %}
-  {% endfor %}
+  <a href="{{ site.github.repository_url }}"
+  {%- else -%}
+    {% for path in site.data.nav_pages %}
+      {%- assign nav_page=site.pages | where:"path",path | first -%}
+      {% if nav_page %}<a href="{{ nav_page.url | absolute_url }}" class="btn">{{ nav_page.title }}</a>{% endif %}
+    {% endfor -%}
   <a href="{{ site.github.owner_url }}" {% endif %} class="btn btn-github"><span class="icon"></span>View on GitHub</a>
 </nav>

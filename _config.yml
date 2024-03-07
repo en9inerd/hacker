@@ -116,3 +116,4 @@ exclude:
   - CNAME
   - docs
   - thumbnail.png
+  - jekyll-theme-hacker.gemspec
