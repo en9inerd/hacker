@@ -72,7 +72,6 @@ baseurl: ""
 lang: en-US
 
 show_downloads: false
-show_forks: true
 
 defaults:
   - scope:
