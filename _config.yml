@@ -13,6 +13,20 @@ author:
 
 logo:
 
+giscus:
+  # repo:
+  # repo_id:
+  # category: Comments
+  # category_id:
+  # mapping: pathname
+  # strict: 0
+  # reactions_enabled: 1
+  # emit_metadata: 0
+  # theme: dark
+  # lang: en
+  # loading: lazy
+  # crossorigin: anonymous
+
 # JSON-LD
 bio:
   gender: male
