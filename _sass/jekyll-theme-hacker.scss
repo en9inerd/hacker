@@ -202,7 +202,6 @@ table {
 }
 
 th {
-  text-align: left;
   border-bottom: 1px dashed $amber;
   padding: 5px 10px;
 }
@@ -485,13 +484,20 @@ textarea:focus {
 /* Curriculum Vitae */
 
 .cv {
-  h4 {
-    margin-bottom: 0;
+  h2:not(:first-of-type) {
+    margin-top: 1.8em;
   }
 
-  h2:not(:first-of-type),
-  h3 {
-    margin-top: 1.8em;
+  .cv-experience,
+  .cv-projects,
+  .cv-education {
+    h4 {
+      margin-bottom: 0;
+    }
+
+    h3:not(:first-of-type) {
+      margin-top: 1.8em;
+    }
   }
 }
 
