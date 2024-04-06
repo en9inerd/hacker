@@ -484,8 +484,15 @@ textarea:focus {
 
 /* Curriculum Vitae */
 
-.remove-bottom-margin {
-  margin-bottom: 0;
+.cv {
+  h4 {
+    margin-bottom: 0;
+  }
+
+  h2:not(:first-of-type),
+  h3 {
+    margin-top: 1.8em;
+  }
 }
 
 .cv-btn {
